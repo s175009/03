@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Message</title>
+</head>
+
+<body>
+<p id="demo"></p>
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
+
+
+
+	<script type="text/javascript">
+	//alert
+	var name= 'Kuba'
+	var surname='Stando'
+
+	alert("Hello! My name is: " + name + " " + surname);
+	console.log(name)
+	console.log(surname)
+
+
+	//prompt
+	function myFunction() {
+    var person = prompt("Please enter your name", "Jakub Stando");
+    
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+
+    }
+}
+
+
+</script>
+
+
+</body>
+
+</html>

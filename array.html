@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Array checker</title>
+		<meta charset="UTF-8">
+	</head>
+
+	<body onload="checkArray()">Try it</body>
+
+		<h1>Array checker</h1>
+		<p>Display results on the console</p>
+
+		<script>
+		var myArray = [];
+		var arrayMax = 3;
+		var limit = arrayMax + 1;
+
+		// assing random integers to array elements		
+		for (var i = 0; i < arrayMax; i++) {
+  			myArray.push(Math.floor(Math.random()*limit));
+			}
+
+
+			// show array elements
+			console.log('Array elements: ' +myArray);
+			// ...
+			
+			
+
+			// check whether the array is ordered
+			// ...
+
+
+			function is_sorted(arr) {
+    var len = arrayMax - 1;
+    for(var i = 0; i < len; ++i) {
+        if(arr[i] > arr[i+1]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+
+	console.log(is_sorted())
+
+
+
+		function checkArray(is_sorted) {
+		console.log("Hello" +is_sorted)
+		if (myArray = false) {
+    	alert("Array not sorted");
+    }
+    else
+    	alert("Array sorted");
+	}
+
+
+
+			// display message: Array is ordered / unordered
+		</script>
+	</body>
+</html>

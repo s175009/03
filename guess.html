@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Message</title>
+</head>
+
+<body>
+<p id="demo"></p>
+
+
+<body onload="myFunction()">Try it</button>
+
+
+
+
+	<script type="text/javascript">
+	//alert
+	var number= getRandomArbitrary(1,6);
+	console.log(number)
+
+
+	/**
+ 	* Returns a random number between min (inclusive) and max (exclusive)
+ 	*/
+	function getRandomArbitrary(min, max) {
+    	return Math.floor(Math.random() * (max - min) + min);
+	}
+
+
+
+	//prompt
+	function myFunction() {
+    var enterNumber = prompt("Please enter your lucky number (1-5)", "");
+    
+    if (enterNumber != number) {
+    	alert("Try once time");
+    }
+    else
+    	alert("Winner. Lucky number is: " +number);
+	}
+
+
+</script>
+
+
+</body>
+
+</html>
